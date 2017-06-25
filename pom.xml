@@ -70,6 +70,7 @@
 			<artifactId>druid</artifactId>
 			<version>1.0.26</version>
 		</dependency>
+
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
@@ -354,7 +355,6 @@
 						</configuration>
 					</execution>
 				</executions>
-
 			</plugin>
 
 			<plugin>
@@ -384,6 +384,7 @@
 					</execution>
 				</executions>
 			</plugin>
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
@@ -583,7 +584,6 @@
 					<providerImplementations>
 						<git>git</git>
 					</providerImplementations>
-
 				</configuration>
 				<dependencies>
 					<dependency>
@@ -596,12 +596,13 @@
 						<artifactId>svnkit</artifactId>
 						<version>RELEASE</version>
 					</dependency>
+					<dependency>
+						<groupId>com.trilead</groupId>
+						<artifactId>trilead-ssh2</artifactId>
+						<version>1.0.0-build215</version>
+					</dependency>
 				</dependencies>
-
 			</plugin>
-
 		</plugins>
 	</build>
-
-
 </project>
